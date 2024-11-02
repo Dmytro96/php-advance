@@ -2,11 +2,18 @@
 
 class ValueObject
 {
+    private int $red;
+    private int $green;
+    private int $blue;
+    
     public function __construct(
-        private $red,
-        private $green,
-        private $blue,
+        int $red,
+        int $green,
+        int $blue,
     ) {
+        $this->red = $red;
+        $this->green = $green;
+        $this->blue = $blue;
     }
     
     public function getRed()
@@ -60,14 +67,9 @@ class ValueObject
         );
     }
     
-    private function checkValidColor(int $color): bool
-    {
-        return $color >= 0 && $color <= 255;
-    }
-    
     private function validateColor(int $color): void
     {
-        if (!$this->checkValidColor($color)) {
+        if (!($color >= 0 && $color <= 255)) {
             throw new InvalidArgumentException('Invalid color value');
         }
     }
