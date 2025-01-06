@@ -1,6 +1,6 @@
 <?php
 
-namespace Classes;
+namespace homeworks\hw4\Classes;
 
 use Exception;
 
