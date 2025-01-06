@@ -1,5 +1,7 @@
 <?php
 
+namespace homeworks\hw3;
+
 trait Trait1
 {
     public function test(): int

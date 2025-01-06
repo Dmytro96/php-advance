@@ -1,8 +1,8 @@
 <?php
 
 
-use Classes\User;
-use Classes\MethodNotFoundException;
+use homeworks\hw4\Classes\MethodNotFoundException;
+use homeworks\hw4\Classes\User;
 
 spl_autoload_register(function ($class) {
     $classPath = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';

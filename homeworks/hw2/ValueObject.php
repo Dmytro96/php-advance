@@ -1,5 +1,7 @@
 <?php
 
+namespace homeworks\hw2;
+
 class ValueObject
 {
     private int $red;
