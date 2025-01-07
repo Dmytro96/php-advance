@@ -13,7 +13,7 @@ services:
       context: .docker/php
     restart: "always"
     ports:
-      - "8081:80" # 443 => https
+      - "8082:80" # 443 => https
     volumes:
       - .:/var/www/html
     networks:

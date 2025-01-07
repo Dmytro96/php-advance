@@ -16,3 +16,6 @@ ssh container_name:
 # Up docker
 up *args:
     docker compose up {{args}}
+
+down *args:
+    docker compose down {{args}}
