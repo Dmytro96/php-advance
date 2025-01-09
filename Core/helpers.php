@@ -1,7 +1,7 @@
 <?php
 
 use App\Enums\Http\Status;
-//use Core\DB;
+use Core\DB;
 
 function jsonResponse(Status $status, array $data = []): string
 {
@@ -18,5 +18,5 @@ function jsonResponse(Status $status, array $data = []): string
 
 function db(): PDO
 {
-//    return DB::connect();
+    return DB::connect();
 }
